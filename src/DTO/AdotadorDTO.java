@@ -1,24 +1,24 @@
 package DTO;
 public class AdotadorDTO {
     //atributos
-    private String nome_adotador, email_adotador;
+    private String nome, email;
 
     
     //metodos especiais
-    public String getNome_adotador() {
-        return nome_adotador;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNome_adotador(String nome_adotador) {
-        this.nome_adotador = nome_adotador;
+    public void setNome(String nome) {
+        this.nome= nome;
     }
 
-    public String getEmail_adotador() {
-        return email_adotador;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmail_adotador(String email_adotador) {
-        this.email_adotador = email_adotador;
+    public void setEmail(String email) {
+        this.email = email;
     }
     
 }

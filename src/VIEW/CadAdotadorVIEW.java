@@ -106,17 +106,7 @@ public class CadAdotadorVIEW extends javax.swing.JFrame {
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
-        String nome, email;
         
-        nome = txtNome.getText();
-        email = txtEmail.getText();
-        
-        AdotadorDTO objadotadordto = new AdotadorDTO();
-        objadotadordto.setNome_adotador(nome);
-        objadotadordto.setEmail_adotador(email);
-        
-        AdotadorDAO objadotadordao = new AdotadorDAO();
-        objadotadordao.cadastrarAdotante(objadotadordto);
     }//GEN-LAST:event_txtNomeActionPerformed
 
     private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
@@ -125,7 +115,17 @@ public class CadAdotadorVIEW extends javax.swing.JFrame {
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         // TODO add your handling code here:
+         String nome, email;
         
+        nome = txtNome.getText();
+        email = txtEmail.getText();
+        
+        AdotadorDTO objadotadordto = new AdotadorDTO();
+        objadotadordto.setNome(nome);
+        objadotadordto.setEmail(email);
+        
+        AdotadorDAO objadotadordao = new AdotadorDAO();
+        objadotadordao.cadastrarAdotante(objadotadordto);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**
